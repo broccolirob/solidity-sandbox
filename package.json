@@ -8,7 +8,7 @@
   "scripts": {
     "deploy": "hardhat deploy",
     "console": "hardhat console",
-    "clean": "hardhat clean",
+    "clean": "hardhat clean && rimraf deployments",
     "verify:etherscan": "hardhat etherscan-verify",
     "verify:tenderly": "hardhat tenderly-verify",
     "verify:sourcify": "hardhat sourcify",
@@ -51,6 +51,7 @@
     "hardhat-gas-reporter": "^1.0.4",
     "prettier": "^2.4.1",
     "prettier-plugin-solidity": "1.0.0-beta.18",
+    "rimraf": "^3.0.2",
     "solhint": "^3.3.6",
     "solidity-coverage": "^0.7.17"
   }
