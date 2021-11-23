@@ -29,7 +29,7 @@ module.exports = {
   solidity: {
     compilers: [
       {
-        version: "0.8.9",
+        version: "0.8.10",
         settings: {
           optimizer: {
             enabled: true,
@@ -131,17 +131,20 @@ module.exports = {
     deployer: {
       default: 0,
     },
-    bob: {
+    alice: {
       default: 1, // generic participant 'a'
     },
-    alice: {
+    bob: {
       default: 2, // generic participant 'b'
     },
     chad: {
       default: 3, // generic participant 'c'
     },
-    frank: {
+    dan: {
       default: 4, // generic participant 'd'
+    },
+    frank: {
+      default: 4, // generic participant 'f'
     },
     eve: {
       default: 5, // passive attacker
@@ -149,8 +152,11 @@ module.exports = {
     mallory: {
       default: 6, // malicious attacker
     },
-    olivia: {
-      default: 7, // oracle
+    oscar: {
+      default: 7, // malicious/passive attacker
+    },
+    dao: {
+      default: 8, // decentralized organization account
     },
   },
   gasReporter: {
